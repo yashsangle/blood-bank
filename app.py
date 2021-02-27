@@ -20,9 +20,9 @@ app.secret_key = "bcadbvav"
 # # mysql =  MySQL(app)
 
 
-# @app.route('/')
-# def index():
-#     return render_template('home.html')
+@app.route('/')
+def index():
+    return render_template('home.html')
 
 
 # @app.route('/contact', methods=['GET', 'POST'])

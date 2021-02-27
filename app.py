@@ -6,8 +6,8 @@ from flask import Flask, render_template, flash, redirect, request, url_for, ses
 # from functools import wraps
 import os
 
-# app = Flask(__name__)
-# app.secret_key = os.environ.get('SECRET_KEY')
+app = Flask(__name__)
+app.secret_key = os.environ.get('SECRET_KEY')
 
 
 # # #Config MySQL

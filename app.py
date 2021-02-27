@@ -4,10 +4,10 @@ from flask import Flask, render_template, flash, redirect, request, url_for, ses
 # # from passlib.hash import sha256_crypt
 # import random
 # from functools import wraps
-import os
+# import os
 
 app = Flask(__name__)
-app.secret_key = os.environ.get('SECRET_KEY')
+app.secret_key = "bcadbvav"
 
 
 # # #Config MySQL

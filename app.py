@@ -4,11 +4,10 @@ from wtforms import Form, StringField, TextAreaField, PasswordField, validators,
 # from passlib.hash import sha256_crypt
 import random
 from functools import wraps
-
+import os
 
 app = Flask(__name__)
-app.secret_key = 'some secret key'
-
+app.secret_key = os.environ.get('SECRET_KEY')
 
 # #Config MySQL
 # app.config['MYSQL_HOST']='localhost'
